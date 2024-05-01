@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento Mercado Pago</title>
+</head>
+<body>
+  <h1>Pagamento Mercado Pago</h1>
+  
+  <div id="payment-form">
+    <label for="amount">Valor do Pagamento:</label>
+    <input type="text" id="amount" name="amount" placeholder="Insira o valor do pagamento">
+    <button id="generate-qr-code">Gerar QR Code</button>
+    <div id="qr-code"></div>
+    <div id="payment-methods">
+      <h2>Formas de Pagamento</h2>
+      <button id="card-payment">Pagar com Cartão de Crédito</button>
+    </div>
+  </div>
+  
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
